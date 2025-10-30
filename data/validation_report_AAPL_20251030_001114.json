@@ -1,0 +1,70 @@
+{
+  "ticker": "AAPL",
+  "date_range": {
+    "start": "2023-01-01",
+    "end": "2024-12-31"
+  },
+  "total_records": 519,
+  "validation_results": {
+    "ohlc_consistency": {
+      "passed": false,
+      "violations": [
+        "High < Close: 1 cases"
+      ]
+    },
+    "missing_data": {
+      "count": 2,
+      "percentage": 0.3853564547206166,
+      "details": {
+        "Close": 1,
+        "Volume": 1
+      }
+    },
+    "outliers": {
+      "price_outliers": 3,
+      "volume_outliers": 1,
+      "details": [
+        {
+          "date": "2023-10-10",
+          "type": "price",
+          "value": 154.56826694964192
+        },
+        {
+          "date": "2023-10-11",
+          "type": "price",
+          "value": 135.52875770459903
+        },
+        {
+          "date": "2023-10-23",
+          "type": "price",
+          "value": 145.96467626943823
+        },
+        {
+          "date": "2024-02-27",
+          "type": "volume",
+          "value": 1435284210
+        }
+      ]
+    },
+    "date_continuity": {
+      "passed": true,
+      "gaps": []
+    },
+    "price_integrity": {
+      "negative_prices": 0,
+      "zero_prices": 0,
+      "large_jumps": 0
+    }
+  },
+  "summary": {
+    "overall_quality": "poor",
+    "issues_found": 7,
+    "critical_issues": 1
+  },
+  "recommendations": [
+    "결측치 2개를 보간 또는 제거하세요",
+    "가격 이상치 3개를 확인하세요 (실제 이벤트일 수 있음)",
+    "거래량 이상치 1개를 확인하세요",
+    "⚠️ 치명적 문제가 발견되었습니다. 즉시 수정 필요!"
+  ]
+}

@@ -1,0 +1,88 @@
+# 바이트 컴파일된 / 최적화된 / DLL 파일
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 가상환경
+.venv/
+venv/
+ENV/
+env/
+
+# 개발 환경 설정
+.idea/
+.vscode/
+.DS_Store
+.cursor/
+.claude/
+
+# 로그 파일
+*.log
+
+# 로컬 데이터베이스
+*.db
+*.sqlite3
+
+# 개인 설정 파일
+*.ini
+*.env
+
+# 캐시 디렉토리
+.cache/
+.pytest_cache/
+
+# 분산 파일
+dist/
+build/
+*.egg-info/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 모델 파일 (용량이 큰 파일)
+models/*.pth
+!models/.gitkeep
+
+# 데이터 파일
+data/*.csv
+!data/.gitkeep
+!data/README.md
+
+# 결과 파일
+results/*.csv
+results/*.json
+results/*.html
+!results/.gitkeep
+!results/README.md
+
+# 임시 파일
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# macOS 파일
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows 파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# PyTorch 체크포인트
+*.ckpt
+*.pt
+
+# TensorFlow 파일
+*.h5
+*.hdf5
+
+# Optuna 데이터베이스
+optuna_*.db
+
+# 성능 프로파일링
+*.prof
+*.lprof
