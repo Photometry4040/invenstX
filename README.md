@@ -2,10 +2,14 @@
 
 InvenstX는 기술적 분석, 패턴 인식, 백테스팅, 그리고 **강화학습 기반 트레이딩**을 지원하는 종합 AI 트레이딩 시스템입니다.
 
-![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![PyTorch](https://img.shields.io/badge/PyTorch-2.4+-ee4c2c.svg)
-![Streamlit](https://img.shields.io/badge/Streamlit-1.22+-FF4B4B.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+[![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.4+-ee4c2c.svg)](https://pytorch.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-1.22+-FF4B4B.svg)](https://streamlit.io/)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![CI](https://github.com/Photometry4040/invenstX/workflows/CI/badge.svg)](https://github.com/Photometry4040/invenstX/actions)
+[![Release](https://img.shields.io/github/v/release/Photometry4040/invenstX)](https://github.com/Photometry4040/invenstX/releases)
+[![Issues](https://img.shields.io/github/issues/Photometry4040/invenstX)](https://github.com/Photometry4040/invenstX/issues)
+[![Stars](https://img.shields.io/github/stars/Photometry4040/invenstX?style=social)](https://github.com/Photometry4040/invenstX/stargazers)
 
 ## 🌟 주요 기능
 
