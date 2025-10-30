@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  invenstx:
+    build: .
+    image: invenstx:latest
+    container_name: invenstx-app
+    ports:
+      - "8501:8501"
+    volumes:
+      # Persist data, models, and results
+      - ./data:/app/data
+      - ./models:/app/models
+      - ./results:/app/results
+      - ./logs:/app/logs
+      # Optional: For development, mount source code
+      # - .:/app
+    environment:
+      - STREAMLIT_SERVER_PORT=8501
+      - STREAMLIT_SERVER_ADDRESS=0.0.0.0
+      - STREAMLIT_SERVER_ENABLE_CORS=false
+      - STREAMLIT_SERVER_ENABLE_XSRF_PROTECTION=false
+      - STREAMLIT_BROWSER_GATHER_USAGE_STATS=false
+      # Add your API keys here (or use .env file)
+      # - ALPHA_VANTAGE_API_KEY=${ALPHA_VANTAGE_API_KEY}
+      # - NEWS_API_KEY=${NEWS_API_KEY}
+    restart: unless-stopped
+    networks:
+      - invenstx-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # Optional: Add Redis for caching
+  # redis:
+  #   image: redis:alpine
+  #   container_name: invenstx-redis
+  #   ports:
+  #     - "6379:6379"
+  #   volumes:
+  #     - redis-data:/data
+  #   networks:
+  #     - invenstx-network
+  #   restart: unless-stopped
+
+  # Optional: Add PostgreSQL for data storage
+  # postgres:
+  #   image: postgres:14-alpine
+  #   container_name: invenstx-db
+  #   environment:
+  #     - POSTGRES_DB=invenstx
+  #     - POSTGRES_USER=invenstx
+  #     - POSTGRES_PASSWORD=invenstx_password
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - postgres-data:/var/lib/postgresql/data
+  #   networks:
+  #     - invenstx-network
+  #   restart: unless-stopped
+
+networks:
+  invenstx-network:
+    driver: bridge
+
+volumes:
+  # redis-data:
+  # postgres-data:
