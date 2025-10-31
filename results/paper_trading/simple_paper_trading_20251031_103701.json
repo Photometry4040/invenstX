@@ -1,0 +1,135 @@
+{
+  "initial_balance": 100000,
+  "final_balance": 100588.62672940834,
+  "metrics": {
+    "total_trades": 6,
+    "winning_trades": 0,
+    "losing_trades": 0,
+    "total_pnl": 338.1149444361206,
+    "max_drawdown": 0.0011089614908861786,
+    "sharpe_ratio": 8.397351650667924,
+    "win_rate": 0,
+    "total_return": 0.005886267294083373
+  },
+  "positions": [
+    {
+      "symbol": "TSLA",
+      "quantity": 11,
+      "average_cost": 434.7644559951241,
+      "current_price": 440.1000061035156,
+      "market_value": 4841.100067138672,
+      "unrealized_pnl": 58.691051192306986,
+      "realized_pnl": 287.6334130557866,
+      "opened_at": "2025-10-31 10:37:01.217419",
+      "updated_at": "2025-10-31 10:37:01.527336"
+    },
+    {
+      "symbol": "GOOGL",
+      "quantity": 19,
+      "average_cost": 270.32747109236624,
+      "current_price": 281.4800109863281,
+      "market_value": 5348.120208740234,
+      "unrealized_pnl": 211.89825798527585,
+      "realized_pnl": 66.956057963533,
+      "opened_at": "2025-10-31 10:37:01.320180",
+      "updated_at": "2025-10-31 10:37:01.527343"
+    },
+    {
+      "symbol": "AAPL",
+      "quantity": 19,
+      "average_cost": 270.1193416602587,
+      "current_price": 271.3999938964844,
+      "market_value": 5156.599884033203,
+      "unrealized_pnl": 24.332392488287326,
+      "realized_pnl": -16.474526583199008,
+      "opened_at": "2025-10-31 10:37:01.422920",
+      "updated_at": "2025-10-31 10:37:01.527347"
+    }
+  ],
+  "trades": [
+    {
+      "trade_id": "d47d2d38-5099-45c3-9ffa-487394b48804",
+      "order_id": "ac8db311-7157-4144-a034-2872ccc49a88",
+      "symbol": "TSLA",
+      "side": "OrderSide.BUY",
+      "quantity": 22,
+      "price": 434.7644559951241,
+      "commission": 9.56481803189273,
+      "executed_at": "2025-10-31 10:37:01.217404",
+      "slippage": 0.002408131447665181,
+      "notes": ""
+    },
+    {
+      "trade_id": "37ad5acc-2789-443f-90de-a8dd8db9dd26",
+      "order_id": "a354a54d-7608-430b-9421-870e1fcb9491",
+      "symbol": "GOOGL",
+      "side": "OrderSide.BUY",
+      "quantity": 37,
+      "price": 270.32747109236624,
+      "commission": 10.002116430417551,
+      "executed_at": "2025-10-31 10:37:01.320165",
+      "slippage": 0.003927218486426539,
+      "notes": ""
+    },
+    {
+      "trade_id": "5385d8ad-d04f-4c57-bc89-fd6b533f1d44",
+      "order_id": "13cec54d-aea6-4b48-bdd5-0a0f35a461a9",
+      "symbol": "AAPL",
+      "side": "OrderSide.BUY",
+      "quantity": 37,
+      "price": 270.1193416602587,
+      "commission": 9.994415641429573,
+      "executed_at": "2025-10-31 10:37:01.422909",
+      "slippage": 0.004161121413601213,
+      "notes": ""
+    },
+    {
+      "trade_id": "a6afbf6f-b085-49b7-b894-97e70a84ecde",
+      "order_id": "117df57a-8981-4734-aa5b-a20ce01a2555",
+      "symbol": "AAPL",
+      "side": "OrderSide.SELL",
+      "quantity": 18,
+      "price": 269.20409018341434,
+      "commission": 4.845673623301458,
+      "executed_at": "2025-10-31 10:37:01.525976",
+      "slippage": 0.001838791253877385,
+      "notes": ""
+    },
+    {
+      "trade_id": "c8a5db9d-d5cc-4141-9b2c-fea089aaeb40",
+      "order_id": "8d06bc15-7458-43cd-a741-c06ed1d470bb",
+      "symbol": "GOOGL",
+      "side": "OrderSide.SELL",
+      "quantity": 18,
+      "price": 274.0472520903403,
+      "commission": 4.932850537626126,
+      "executed_at": "2025-10-31 10:37:01.526456",
+      "slippage": 0.00190390508771475,
+      "notes": ""
+    },
+    {
+      "trade_id": "cedf0c5e-401e-43c9-bd25-bf6aa012dff4",
+      "order_id": "e36d3ae7-cb1a-422e-a379-f153af3ffaea",
+      "symbol": "TSLA",
+      "side": "OrderSide.SELL",
+      "quantity": 11,
+      "price": 460.9129480911047,
+      "commission": 5.070042429002151,
+      "executed_at": "2025-10-31 10:37:01.527078",
+      "slippage": 0.0012937133797456155,
+      "notes": ""
+    }
+  ],
+  "equity_curve": [
+    100000,
+    100000,
+    100000,
+    100000,
+    100378.85744548554,
+    100441.98837983875,
+    100700.29948365642,
+    100588.62672940834
+  ],
+  "total_commission": 44.40991669366958,
+  "total_slippage": 128.7628558241777
+}
